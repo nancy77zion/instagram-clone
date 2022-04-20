@@ -1,19 +1,21 @@
-import '..styles/navigation.scss';
+import "../styles/navigation.scss";
 import logo from "../images/instagramLogo.png";
 import searchIcon from "../images/searchIcon.png";
+import Menu from './Menu';
 
-function Navigation () {
+function Navigation() {
     return (
-        <div className='navigation'>
-             <div className='container'>
-                <img className="logo" src={logo} alt="instagram logo" />
-                <div className="search">
-                    <img className="searchIcon" src={searchIcon} alt="search icon" />
-                    <span className="searchText">Search</span>
-                </div>
-             </div>
+      <div className="navigation">
+        <div className="container">
+          <img className="logo" src={logo} alt="instagram logo" />
+          <div className="search">
+            <img className="searchIcon" src={searchIcon} alt="search icon" />
+            <span className="searchText">Search</span>
+          </div>
+          <Menu />
         </div>
-    )
-};
-
-export default Navigation
+      </div>
+    );
+  }
+  
+  export default Navigation;
